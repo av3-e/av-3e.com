@@ -1,91 +1,139 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>My Page</title>
+<title>Ave's Studios</title>
+
 <style>
     body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        color: #222;
+        background: #0f1115;
+        color: #e6e6e6;
+        line-height: 1.6;
     }
+
     .container {
-        max-width: 800px;
+        max-width: 850px;
         margin: 0 auto;
-        padding: 40px 20px;
+        padding: 50px 18px;
         text-align: center;
     }
 
     h1 {
-        margin-bottom: 10px;
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-bottom: 6px;
+        letter-spacing: 1px;
+        text-shadow: 0 0 15px rgba(120,120,255,0.15);
     }
 
     h2 {
-        margin-top: 0;
         font-weight: normal;
-        color: #666;
-    }
-    .image-stack img {
-        width: 100%;
-        max-width: 600px;
-        margin: 20px auto;
-        display: block;
-        border-radius: 10px;
+        font-size: 1.1rem;
+        color: #aaa;
+        margin-top: 0;
+        opacity: 0.9;
     }
     .separator {
-        margin: 40px 0;
+        margin: 35px auto;
+        width: 80%;
         border: none;
-        border-top: 2px solid #ddd;
+        border-top: 1px solid rgba(255,255,255,0.08);
     }
+
+    .image-stack img {
+        width: 92%;
+        max-width: 620px;
+        display: block;
+        margin: 18px auto;
+        border-radius: 14px;
+
+        box-shadow: 0 10px 30px rgba(0,0,0,0.45);
+        transform: rotate(-0.3deg);
+        transition: 0.25s ease;
+    }
+
+    .image-stack img:nth-child(2) {
+        transform: rotate(0.4deg);
+    }
+
+    .image-stack img:hover {
+        transform: scale(1.02) rotate(0deg);
+    }
+
+    p {
+        max-width: 650px;
+        margin: 0 auto;
+        color: #cfcfcf;
+        font-size: 1.05rem;
+        padding: 0 10px;
+    }
+
     .links {
-        margin-top: 40px;
+        margin-top: 50px;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 18px;
+        flex-wrap: wrap;
     }
+
     .links a {
         text-decoration: none;
-        padding: 12px 20px;
-        border-radius: 6px;
-        background: #333;
+        padding: 12px 22px;
+        border-radius: 10px;
         color: white;
-        transition: 0.2s;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+        transition: 0.2s ease;
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.35);
     }
-    .links a:hover {
-        background: #555;
-    }
+
     .discord {
         background: #5865F2;
     }
+
     .github {
-        background: #24292e;
+        background: #1f2328;
+        border: 1px solid rgba(255,255,255,0.08);
     }
-    .discord:hover {
-        background: #4752c4;
+
+    .links a:hover {
+        transform: translateY(-2px) scale(1.03);
     }
-    .github:hover {
-        background: #3a3f44;
+
+    body::before {
+        content: "";
+        position: fixed;
+        top: -100px;
+        left: -100px;
+        width: 300px;
+        height: 300px;
+        background: rgba(88,101,242,0.15);
+        filter: blur(80px);
+        z-index: -1;
     }
+
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>"Ave's Studios"</h1>
-  <h2>"This is the official website of Ave's studio! welcome."/h2>
+    <h1>Ave's Studios</h1>
+    <h2>This is the official website of Ave's studio! welcome.</h2>
     <hr class="separator">
-    <!-- Images -->
     <div class="image-stack">
         <img src="https://via.placeholder.com/600x300" alt="Image 1">
         <img src="https://via.placeholder.com/600x300" alt="Image 2">
     </div>
     <hr class="separator">
     <p>
-    Ave's studios is a roblox development group. We hope to bring you excellent experiences to play in the future. Unfortunately, development is currently slow.
+        Ave's studios is a roblox development group. We hope to bring you excellent experiences
+        to play in the future. Unfortunately, development is currently slow.
     </p>
-    <hr class="separator">    <div class="links">
+    <hr class="separator">
+    <div class="links">
         <a class="discord" href="https://discord.com" target="_blank">Discord</a>
         <a class="github" href="https://github.com" target="_blank">GitHub</a>
     </div>
