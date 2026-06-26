@@ -83,12 +83,9 @@
     </div>
     <hr class="separator">
     <p>
-        Some centered text goes here. You can add paragraphs, descriptions,
-        or anything you want. The content stays nicely in the middle and does not touch the edges.
+    Ave's studios is a roblox development group. We hope to bring you excellent experiences to play in the future. Unfortunately, development is currently slow.
     </p>
-    <hr class="separator">
-    <!-- Footer Links -->
-    <div class="links">
+    <hr class="separator">    <div class="links">
         <a class="discord" href="https://discord.com" target="_blank">Discord</a>
         <a class="github" href="https://github.com" target="_blank">GitHub</a>
     </div>
